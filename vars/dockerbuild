@@ -1,4 +1,4 @@
-def call(String projectname, String versio){
+def call(String projectname, String imagetag){
   echo "Building the code"
-  sh "docker build -t '${projectname}':'${versio}' ."
+  sh "docker build -t ${projectname}:${imagetag} ."
 }
